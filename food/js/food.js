@@ -166,6 +166,7 @@ $(function () {
             url: "http://39.105.232.109:3000/user/logout",
             type: "post",
             success: function (data) {
+                localStorage.removeItem("id");
                 console.log(data);
                 var flag=window.confirm("确定要退出吗？");
                 if(flag){

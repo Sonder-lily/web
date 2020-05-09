@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    user-select: none;
+}
+#login{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../img/timg (2).png") no-repeat 0 0;
+    background-size: cover;
+}
+#login::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+.content{
+    width:400px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 20px;
+}
+.content li{
+    margin-bottom:  20px;
+    font-size: 20px;
+    color:rgba(255,255,255,.8);
+    word-spacing: 1px;
+}
+.content li>input{
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 30px;
+    text-indent: 5px;
+    font-size: 15px;
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+}
+.content li>input::-webkit-input-placeholder{
+    color:#c2beb2;
+}
+.login-in,
+.login-up{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width:80px;
+    height: 35px;
+    line-height:35px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-in{
+    background: rgba(66,151,66,1);
+}
+.login-up{
+    background: rgba(255,255,255,0.5);
+}
+.load{
+    display:none;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

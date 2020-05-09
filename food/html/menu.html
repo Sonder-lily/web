@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>餐饮后台管理系统</title>
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/food.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/food.js"></script>
+</head>
+<body>
+<!--    导航-->
+<div id="backcolor">
+    <div class="head">
+        <div class="title">
+            <i class="fa fa-leaf"></i>
+            <i>Restaurant backstage</i>
+            <span class="start"><i class="fa fa-tree"></i></span>
+        </div>
+        <ul class="msg">
+            <li class="user">
+                欢迎你，亦辰
+            </li>
+            <li class="icon">
+                <span class="logo email">4</span>
+                <i class="fa fa-envelope" style="margin-right: 20px"></i>
+            </li>
+            <li class="icon">
+                <span class="logo bell">3</span>
+                <i class="fa fa-bell"></i>
+            </li>
+            <li class="close">
+                <i class="fa fa-sign-out"></i>退出
+            </li>
+        </ul>
+    </div>
+    <!--    主体-->
+    <div class="main">
+        <div class="list-back">
+            <ul class="list">
+                <li class="list-top"></li>
+                <li class="list-msg">
+                    <div class="sculpture">
+                        <img src="../img/title%20(2).jpg" alt="">
+                    </div>
+                    <div class="show">
+                        <i class="fa fa-pencil"></i>账号设置
+                    </div>
+                </li>
+                <li class="list-title open-user">
+                    <span class="before"></span>
+                    <span><i class="fa fa-user-circle-o"></i>&nbsp;&nbsp;用户</span>
+                    <div class="arrow">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <span class="after"></span>
+                </li>
+                <li class="list-title open-menu list-title-active">
+                    <span class="before"></span>
+                    <span><i class="fa fa-reorder"></i>&nbsp;&nbsp;菜单</span>
+                    <div class="arrow">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <span class="after"></span>
+                </li>
+                <li class="list-title open-order">
+                    <span class="before"></span>
+                    <span><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;订单</span>
+                    <div class="arrow">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <span class="after"></span>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <table class="vegetable" cellspacing="0" border="0">
+                    <thead>
+                    <tr>
+                        <th class="number">编号</th>
+                        <th class="ver-name">菜名</th>
+                        <th class="price">价格</th>
+                        <th class="desc">描述</th>
+                        <th class="typename">类型</th>
+                        <th class="typeid">类型id</th>
+                        <th class="handle">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="12">
+                            <ul class="pagination">
+                                <li class="pre">
+                                    <
+                                </li>
+                                <li class="next">
+                                    >
+                                </li>
+                                <span class="add-menu-open"><i class="fa fa-plus"></i>添加</span>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="addMenu">
+            <div class="addMenu-msg">
+                <h2>添加菜品</h2>
+                <div class="input-menu-msg">
+                            <span class="menu-sign  menu-name">
+                            <span class="menu-sign-active"><i class="fa fa-paw" style="margin-right: 60px"></i>名称</span>
+                            </span>
+                    <input type="text" class="input-menu">
+                </div>
+                <div class="input-menu-msg">
+                            <span class="menu-sign  price">
+                            <span class="menu-sign-active"><i class="fa fa-cny" style="margin-right: 60px"></i>价格</span>
+                            </span>
+                    <input type="text" class="input-menu">
+                </div>
+                <div class="input-menu-msg">
+                            <span class="menu-sign  desc">
+                            <span class="menu-sign-active"><i class="fa fa-lemon-o" style="margin-right: 60px"></i>描述</span>
+                            </span>
+                    <input type="text" class="input-menu">
+                </div>
+                <div class="input-menu-msg">
+                            <span class="menu-sign  typename">
+                            <span class="menu-sign-active"><i class="fa fa-coffee" style="margin-right: 60px"></i>类型</span>
+                            </span>
+                    <input type="text" class="input-menu" placeholder="蔬菜；水果；热菜；凉菜；西餐">
+                </div>
+                <div class="input-menu-msg">
+                            <span class="menu-sign  typeid">
+                            <span class="menu-sign-active"><i class="fa fa-cutlery" style="margin-right: 60px"></i>&nbsp;&nbsp;id&nbsp;&nbsp;</span>
+                            </span>
+                    <input type="text" class="input-menu input-typeid" placeholder="0 蔬菜；1 水果；2 热菜；3 凉菜；4 西餐">
+                </div>
+                <div class="add-menu-button">
+                    <span class="add-menu-submit">确认</span>
+                    <span class="add-menu-reset">重置</span>
+                </div>
+                <span class="addMenu-close">
+                        <i class="fa fa-close"></i>
+                    </span>
+            </div>
+        </div>
+        <div class="changeMenu">
+            <div class="changeMenu-back">
+                <ul class="changeMenu-Content">
+                    <li class="ver-name">菜名</li>
+                    <li class="price">价格</li>
+                    <li class="desc">描述</li>
+                    <li class="typename">类型</li>
+                    <li class="typeid">类型id</li>
+                </ul>
+                <ul class="changeMenu-submit">
+                    <li>确定</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

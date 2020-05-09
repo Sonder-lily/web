@@ -198,7 +198,7 @@ $(function () {
             data:{_id:localStorage.getItem("id")},
             success: function (data) {
                 if(data.err=="0"){
-                    var $msg = data.list;
+                    var $msg = data.list; 
                     $(".user-name").text($msg[0].name);
                     $(".user-sex").text($msg[0].sex);
                     $(".user-tel").text($msg[0].tel);

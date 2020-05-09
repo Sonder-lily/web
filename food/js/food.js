@@ -1,4 +1,7 @@
 $(function () {
+    if(localStorage.getItem("id")==null&&window.location.href.indexOf("login.html")==-1){
+        window.location.href = './login.html';
+    }
     var MenuID=[];
     var OrderID=[];
     //对数据进行初始化操作
@@ -185,7 +188,9 @@ $(function () {
         });
     };
     //显示个人资料
-    showUser();
+    if(window.location.href.indexOf("user.html")!=-1){
+        showUser();
+    }
     function showUser() {
         $.ajax({
             url: "http://39.105.232.109:3000/user/getInfoById",

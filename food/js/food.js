@@ -1,5 +1,5 @@
 $(function () {
-    if(localStorage.getItem("id")==null&&window.location.href.indexOf("login.html")==-1){
+    if(localStorage.getItem("id")==null && window.location.href.indexOf("login.html")==-1){
         window.location.href = './login.html';
     }
     var MenuID=[];
